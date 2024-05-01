@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>jdbcOrders</display-name>
+	<welcome-file-list>
+		<welcome-file>orders.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>AddOrders</servlet-name>
+		<servlet-class>com.jdbc.orders.web.AddOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddOrders</servlet-name>
+		<url-pattern>/addOrder</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CreateOrderItems</servlet-name>
+		<servlet-class>com.jdbc.orders.web.CreateOrderItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateOrderItems</servlet-name>
+		<url-pattern>/createOrderItems</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddItem</servlet-name>
+		<servlet-class>com.jdbc.orders.web.AddOrderItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddItem</servlet-name>
+		<url-pattern>/addItem</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteOrderItem</servlet-name>
+		<servlet-class>com.jdbc.orders.web.DeleteOrderItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteOrderItem</servlet-name>
+		<url-pattern>/deleteOrderItem</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteOrder</servlet-name>
+		<servlet-class>com.jdbc.orders.web.DeleteOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteOrder</servlet-name>
+		<url-pattern>/deleteOrder</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateOrder</servlet-name>
+		<servlet-class>com.jdbc.orders.web.UpdateOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateOrder</servlet-name>
+		<url-pattern>/updateOrder</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateOrderItem</servlet-name>
+		<servlet-class>com.jdbc.orders.web.UpdateOrderItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateOrderItem</servlet-name>
+		<url-pattern>/updateOrderItem</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveUpdateOrderItem</servlet-name>
+		<servlet-class>com.jdbc.orders.web.SaveUpdateOrderItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveUpdateOrderItem</servlet-name>
+		<url-pattern>/saveUpdateOrderItem</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
